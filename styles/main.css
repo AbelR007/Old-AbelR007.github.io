@@ -1,3 +1,54 @@
+
+/* Defined Variables */
+:root{
+    --background-color: #051120;
+    --font-color: #fff;
+    --border-color: #fff;
+}
+
+/* For whole website */
 *{
-    font-family: sans-serif;
+    font-family: 'JetBrains Mono',sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    border-bottom: 1px solid var(--font-color);
+}
+nav a{
+    color: var(--font-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-left: 1px solid var(--font-color);
+}
+nav > a:nth-child(1)
+{
+    border: none;
+    margin-right: auto;
+    color: var(--font-color);
+}
+nav a:hover{
+    color: var(--background-color);
+    background-color: var(--font-color);
+}
+
+/* Content Block */
+.content{
+    display: grid;
+    padding: auto;
+    color: var(--font-color);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    padding: 10px 20px;
+}
+footer div
+{
+    color: var(--font-color);
+    margin-left: auto;
 }
