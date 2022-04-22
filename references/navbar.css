@@ -1,0 +1,66 @@
+/* Source Code guiding me to Create a Navbar */
+
+.primary-nav {
+    --font-weight: 600;
+    --font-width: 80;
+    background: #fff;
+    -webkit-box-shadow: 0 0 2em rgba(0, 0, 0, .1);
+    box-shadow: 0 0 2em rgba(0, 0, 0, .1);
+    margin-bottom: var(--fs-800);
+    padding: 2rem 0
+}
+
+.primary-nav ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: var(--fs-300);
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase
+}
+
+.primary-nav ul>* {
+    margin: 0 .5em;
+    padding: .5em
+}
+
+.primary-nav li:first-child {
+    --clr: var(--clr-primary-400)
+}
+
+.primary-nav li:nth-child(2) {
+    --clr: var(--clr-article-400)
+}
+
+.primary-nav li:nth-child(3) {
+    --clr: var(--clr-youtube-400)
+}
+
+.primary-nav li:nth-child(4) {
+    --clr: var(--clr-course-400)
+}
+
+.primary-nav li:nth-child(5) {
+    --clr: var(--clr-resource-400)
+}
+
+.primary-nav li.active a {
+    text-decoration-thickness: .25em
+}
+
+.primary-nav a {
+    color: var(--clr, var(--clr-primary-400));
+    text-decoration-thickness: .125em;
+    text-underline-offset: .25em
+}
+
+.primary-nav a:focus,
+.primary-nav a:hover {
+    color: var(--clr-neutral-900)
+}

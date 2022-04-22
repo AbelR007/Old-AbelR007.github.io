@@ -1,0 +1,81 @@
+/* CSS STYLING */
+
+:root {
+  --color-text: #313131;
+  --color-bg: #ffe8e8;
+  --ff-family: "JetBrains Mono", monospace;
+  --ff-family-sp: var(--ff-family);
+  --ff-family-head: "Roboto", sans-serif;
+  --ff-family-sub: "Poppins", sans-serif;
+  --color-bg__nav: #fff;
+}
+
+body,
+html {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--ff-family);
+}
+
+/* GENERAL */
+
+/* Responsive Navigation Bar */
+.navbar {
+  /* No need of margin and padding if you are using css minreset module */
+  /* margin: 0; */
+  /* padding: 0; */
+  font-family: var(--font-family-sp);
+  background-color: var(--color-bg__nav);
+  padding: 2rem 0;
+}
+
+.navbar ul {
+  /* Fixed Values */
+  margin: 0;
+  padding: 0;
+
+  /* Changes into fLex printing every child in the same block */
+  display: flex;
+  /* Adds a responsive wrap */
+  flex-wrap: wrap;
+  gap: 1em 0;
+
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.navbar ul > * {
+  margin: 0 0.5em;
+  padding: 0.5em;
+}
+
+.navbar a {
+  padding: 0.5em;
+
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+
+  text-decoration: none;
+}
+
+.navbar a:focus,
+.navbar a:hover {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+/* SPECIFIC */
+
+/* Aligning Logo at left of navbar and adding responsiveness */
+.navbar li:first-child {
+  margin-right: auto;
+}
+@media screen and (max-width: 600px) {
+  .navbar li:first-child {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    place-content: center;
+  }
+}
+/* End of Logo Aligning */
