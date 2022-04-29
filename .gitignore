@@ -1,3 +1,3 @@
-.dump/index.html
-.dump/layout1.css
-.dump/layout0.css
+# Ignoring Dump Files & Test Files
+.dump
+.fonts
