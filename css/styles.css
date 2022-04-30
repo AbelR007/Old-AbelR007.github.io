@@ -1,155 +1,142 @@
 /* #region Root */
 
 :root {
-    /* --cbg-primary: white; */
-    /* --cbg-secondary: #ffe8e8; */
-    /* --cbg-accent: #ffe8e8; */
-    /* Color of text - ct */
-    /* --ct-primary: #222; */
-    /* --ct-secondary-clrtxt: #222; */
-    /* --ct-accent: gold; */
-
-    --white : #fff;
-    --black : #222;
-    --gold : gold;
-
-    /* Font Family : ff */
-    --ff-primary: "Poppins", "JetBrains Mono", sans-serif;
-    --ff-secondary: "Josefin Sans", "Radio Canada", sans-serif;
-    --ff-accent: "Oxygen", sans-serif;
+  --white: #fff;
+  --black: #222;
+  --gold: gold;
+  /* Font Family : ff */
+  --ff-primary: "Poppins", "JetBrains Mono", sans-serif;
+  --ff-secondary: "Josefin Sans", "Radio Canada", sans-serif;
+  --ff-accent: "Oxygen", sans-serif;
 }
 
-
 /* #endregion */
-
 
 /* #region  Reset */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    line-height: 1.5;
-    font-family: var(--ff-primary), var(--ff-secondary), sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  font-family: var(--ff-primary), var(--ff-secondary), sans-serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* #endregion */
 
 /* #region General */
 
-.spacing > *+*{
-    margin-top: var(--spacer),2rem;
+.spacing > * + * {
+  margin-top: var(--spacer), 2rem;
 }
 
-
 .content {
-    width: 85%;
-    max-width: 65em;
-    margin: 0 auto;
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
 }
 
 .button {
   display: inline-block;
   text-decoration: none;
-  
   color: var(--clr-text, #fff);
   /* font-weight: 500; */
   /* text-transform: uppercase; */
   font-size: 1.125rem;
-
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   background: var(--clr-accent, var(--gold));
-
-  border-radius: .25em;
-
+  border-radius: 0.25em;
   /* for hover effect */
-  transition: 
-    transform 250ms ease-in-out,
-    opacity 250ms radial,
-  ;
+  transition: transform 250ms ease-in-out, opacity 250ms radial;
 }
+
 .button:hover,
 .button:focus {
   transform: scale(1.1);
-  opacity: .7;
+  opacity: 0.7;
 }
-/* #endregion */
 
+/* #endregion */
 
 /* #region Navigation Bar styling */
 
 .navbar {
-    background-color: var(--white), white;
-    padding: 2rem 0;
-    /* Box Shadow */
-    box-shadow: 0 0 10em rgb(0, 0, 0, .4);
+  background-color: var(--white), white;
+  padding: 2rem 0;
+  /* Box Shadow */
+  box-shadow: 0 0 10em rgb(0, 0, 0, 0.4);
 }
+
 .navbar ul {
-    /* Fixed Values */
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    /* Adds a responsive wrap */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em 0;
-    justify-content: center;
-    text-transform: uppercase;
+  /* Fixed Values */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* Adds a responsive wrap */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 0;
+  justify-content: center;
+  text-transform: uppercase;
 }
-.navbar ul>* {
-    margin: 0 .5rem;
-    padding: .5em;
+
+.navbar ul > * {
+  margin: 0 0.5rem;
+  padding: 0.5em;
 }
+
 .navbar a {
-    padding: .5em;
-    color: var(--black), black;
-    border: 1px solid #444;
-    border-radius: .3em;
-    text-decoration: none;
+  padding: 0.5em;
+  color: var(--black), black;
+  border: 1px solid #444;
+  border-radius: 0.3em;
+  text-decoration: none;
 }
+
 .navbar a:focus,
 .navbar a:hover {
-    color: var(--gold);
-    background-color: black;
+  color: var(--gold);
+  background-color: black;
 }
 
 /* Specific Nav Styling */
+
 .navbar li.active a {
-    border: 2px solid #222;
+  border: 2px solid #222;
 }
 
 .navbar li:first-child {
-    text-transform: lowercase;
-    margin-right: auto;
-    font-size: 1.125em;
+  text-transform: lowercase;
+  margin-right: auto;
+  font-size: 1.125em;
 }
 
 /* Responsive Nav Styling for Width 600 px */
+
 @media screen and (max-width: 600px) {
-    .navbar li:first-child {
-        margin: 0;
-        width: 100%;
-        display: flex;
-        place-content: center;
-    }
+  .navbar li:first-child {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    place-content: center;
+  }
 }
 
 /* #endregion */
@@ -162,56 +149,107 @@ p {
   line-height: 1.1;
   text-transform: uppercase;
 }
+
 .desc {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hero {
   color: white;
   text-align: center;
   padding: 15em 0;
-
   background: white;
   background-size: 100%;
   /* background-size: clamp(80%, 100vw + 10%, 100%); */
 }
+
 @media screen and (max-width: 1100px) {
-  .hero{
+  .hero {
     background-size: 90em;
   }
 }
 
-@supports (background-blend-mode: multiply){
-  .hero{
-    background-image:
-      url(../img/laptop.png),
-      radial-gradient(#fff,#000);
-      background-blend-mode: multiply;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center center;
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background-image: url(../img/laptop.png), radial-gradient(#fff, #000);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
+}
+
+/* #endregion */
+
+/* #region Projects */
+
+.section-title {
+  text-transform: uppercase;
+  padding: 40px 60px;
+  margin: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.project__content {
+  max-width: 75em;
+  padding: 40px;
+}
+
+.cardgrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  transition: transform 850ms ease-in-out, opacity 250ms radial;
+}
+
+.cardgrid :hover,
+.cardgrid :focus {
+  background-color: var(--black);
+  color: var(--gold);
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.cardgrid > div{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: #eee;
+  color: #111;
+
+  box-shadow: 0 0 10em rgb(0, 0, 0, 0.4);
+  border-radius: 20px ;
+  /* margin: 20px; */
+  padding: 20px 20px ;
+  /* margin: 4em; */
 }
 
 /* #endregion */
 
 
 /* #region Footer */
+
 .footer {
-  width : 100%;
+  width: 100%;
   padding: 2em;
   text-align: center;
+  border: 1px dotted #222;
 }
+
 .footername {
-  padding : .2em;
+  padding: .5em;
   color: var(--clr-text), black;
   text-decoration: none;
   border: 1px solid #222;
   border-radius: 15px;
 }
+
 .footername:focus,
 .footername:hover {
-  color : var(--gold);
+  color: var(--gold);
   background-color: black;
 }
 
