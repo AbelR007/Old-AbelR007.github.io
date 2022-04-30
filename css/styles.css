@@ -169,13 +169,15 @@ p {
   }
 }
 
-@supports (background-blend-mode: multiply) {
-  .hero {
-    background-image: url(../img/laptop.png), radial-gradient(#fff, #000);
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
+@supports (background-blend-mode: multiply){
+  .hero{
+    background-image:
+      url(../img/desk.jpg),
+      radial-gradient(#fff,#000);
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
   }
 }
 
