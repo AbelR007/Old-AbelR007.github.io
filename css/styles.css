@@ -184,7 +184,7 @@ p {
 @supports (background-blend-mode: multiply){
   .hero{
     background-image:
-      url(../img/laptop.png),
+      url(../img/desk.jpg),
       radial-gradient(#fff,#000);
       background-blend-mode: multiply;
       background-attachment: fixed;
